@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>ΠΛΗΘΟΣ ΑΝΤΙΚΕΙΜΕΝΩΝ Ν=10</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">ΠΛΗΘΟΣ<span class="logo_colour"> ΑΝΤΙΚΕΙΜΕΝΩΝ Ν=10 ΚΑΙ Ν=50 </span></a></h1>
+          <h2></h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">HOME</a></li>
+          <li><a href="plithos1.html">ΠΛΗΘΟΣ ν=10 και ν=50</a></li>
+          <li><a href="plithos2.html">ΠΛΗΘΟΣ ν=100 και ν=500</a></li>
+          <li><a href="symp.html">ΣΥΜΠΕΡΑΣΜΑΤΑ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Για Ν=10 και Ν=50</h1>
+        <p>Παρατηρώντας τα αποτελέσματα εκτέλεσης των προγραμμάτων βλέπουμε ότι για μικρό αριθμό πλήθους αντικειμένων (ν=10) οι αλγόριθμοι αποδίδουν ταυτόσημα αποτελέσματα. Καθώς όμως αυξάνεται η συνολική χωρητικότητα σακιδίου οι αλγόριθμοι αρχίζουν να έχουν σοβαρές αποκλίσεις στο αποτέλεσμα με καλύτερα αποτελέσματα να δίνει ο επιλυτής OR-TOOLS και να ακολουθείται από τους Dynamic, και τον Brute Force (Ο οποίος δίνει πολύ ικανοποιητικά αποτελέσματα σε μικρό πλήθος συνδυασμών, Βλ. το Γράφημα που ακολουθεί).
+</p>
+        
+<p>
+           <input name="Γράφημα 1" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/10 Values.png" alt="Search" title="Search" />
+        <p>Αυξάνοντας τώρα το πλήθος των αντικειμένων σε (ν=50) ακόμα και για μικρές τιμές χωρητικότητας σακιδίου παρατηρούμε ότι οι αλγόριθμοι αρχίζουν να έχουν αποκλίσεις στις τιμές που επιστρέφουν, με κάποιες φορές οριακά καλύτερο τον επιλυτή OR-TOOLS, και κάποιες άλλες τον Dynamic ακολουθούμενο από τους Branch and Bound, και Greedy, ενώ παρατηρούμε ότι ο Brute Force αρχίζει να μην πετυχάινει καθόλου καλές τιμές αξιών γιατί λήγει το χρονικό όριο των 10 δευτερολέπτων που του έχει διατεθεί για εκτέλεση. Αυτό φαίνεται περισσότερο στα παραδείγματα με μεγαλύτερες αξίες σακιδίου (από το 35 περίπου, έως και το 80, Βλ. Παρακάτω Γράφημα).
+</p>
+        
+<p>
+            
+            <input name="Γράφημα 2" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/50 Values.png" alt="Search" title="Search" />
+
+
+
+
+          </p>
+    </div>
+    
+  </div>
+</body>
+</html>
